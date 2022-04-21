@@ -27,7 +27,7 @@ function initMap() {
         return new google.maps.Marker({
             position: location,
             label: labels[i % labels.length]
-        })
+        });
     });
 
     const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
